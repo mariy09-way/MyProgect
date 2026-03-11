@@ -4,4 +4,4 @@ class Person:
         self.name = name    
         self.age = age       
 
-pers = Person(input("Введите имя: "),input("Введите возраст: "))
+pers = Person(input("Введите имя: "),int(input("Введите возраст: ")))
