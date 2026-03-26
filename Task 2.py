@@ -7,3 +7,16 @@ while True:
     n = input("Нажмите Y или y для завершения программы: ")
     if n=='Y' or n=='y':
         break
+
+try:
+    number = int(input("Введите число: "))
+    if number > 5:
+        raise Exception("Результат будет меньше 1")
+    print("Введенное число:", 5/number)
+except ZeroDivisionError as ex:
+    print("Деление на ноль: ", ex)
+except BaseException as ex:
+    print("Преобразование прошло неудачно: ", ex)
+finally:
+    print("Блок try завершил выполнение")
+print("Завершение программы")
